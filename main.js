@@ -20,7 +20,7 @@ var theCost = items.filter(function(el){
 
 var newCost = "";
 theCost.forEach(function(el, index, arr){
-  newCost += "<h3>" + el.title + "cost between" + el.price + "</h3>";
+  newCost += "<h3>" + el.title + "</h3>" + "<h2>" + "Price: " + el.price + "</h2>";
 })
 
 document.getElementById("answer2").innerHTML = newCost;
@@ -33,7 +33,7 @@ var currencyCode = items.filter(function(el){
 
 var gbp = "";
 currencyCode.forEach(function(el){
-  gbp += "<h3>" + el.title + "GBP" + el.price + "</h3>";
+  gbp += "<h3>" + el.title + "</h3>" + "<h2>" + "GBP" + el.price + "</h2>";
 });
 
 document.getElementById("answer3").innerHTML = gbp;
@@ -46,7 +46,7 @@ var itsWood = items.filter(function(el) {
 
 var goodWood = "";
 itsWood.forEach(function(el){
-  goodWood += "<h3>" + el.title + "</h3>";
+  goodWood += "<h2>" + el.title + "</h2>";
 });
 
 document.getElementById("answer4").innerHTML = goodWood;
@@ -64,7 +64,7 @@ var someMaterials = items.filter(function(el){
 
 var questionFive = "";
 someMaterials.forEach(function(el, index, arr){
-  questionFive += "<h3>" + el.title + "total:" + el.materials.length + "</h3>";
+  questionFive += "<h3>" + el.title + "<h3>" + "<h2>" +  "total:" + "</h2" + "<h3>" + el.materials.length + "</h3>";
   questionFive += "<li>" + el.materials + "</li>";
 });
 
